@@ -56,26 +56,35 @@ h1 {
 }
 
 header {
+    background: #3a3a3a;
+    color: #fff;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.6);
+}
+
+p {
     background: #333;
     color: #fff;
     align-items: center;
     text-align: center;
     padding: 20px;
     border-radius: 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
+    box-shadow: 0 2px 5px rgba(0,0,0,0.6);
 
-p {
-    text-align: center;
 }
 
 img {
     display: block;       /* 1. Udělá z obrázku blokový prvek */
     margin: 20px auto;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.6);
     height: auto;
     border: 18px solid #292525;
+    border-bottom: none; /* Tato řádka zruší spodní linku */
+
 }
 
 #srovnani {
@@ -93,10 +102,10 @@ img {
 /* Toto zajistí zakulacení, o které vám jde */
 section {
     color: #f1f1f1;
-    background: #333333;
+    background: #3c3c3c;
     padding: 20px;
     border-radius: 20px; /* Tady si nastavte "kulatost" dle libosti */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.6);
 }
 
 .grid-layout {
@@ -109,4 +118,69 @@ section {
 #nahore {
     grid-column: span 2;
     margin-top: 10px;
+}
+
+h2 {
+    color: #5ecd3d;
+    text-align: center;
+    font-size: x-large;
+}
+
+h1 {
+    color: #5ecd3d;
+}
+
+a {
+    color: #52bf56; /* Bílá barva */
+
+}
+
+a:hover {
+    color: #3e8e41; /* Barva se změní, když na odkaz najedete myší */
+    text-decoration: underline; /* Odkaz se při najetí podtrhne */
+}
+
+h1 {
+    font-size: xxx-large;
+}
+
+/* Obal pro obrázek a popisek */
+.image-container {
+    display: table; /* Zajistí, že obal bude stejně široký jako obrázek */
+    margin: 20px auto; /* Vycentruje celou skupinu */
+    text-align: center;
+    border-bottom: none;
+}
+
+h3 {
+    color: #5ecd3d;
+    text-align: center;
+    background: #3c3c3c;
+    border: #333333;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.image-container img {
+    display: block;       /* Toto je klíčové - zruší neviditelnou mezeru pod obrázkem */
+    margin: 0 auto;       /* Vycentrování */
+    border: 18px solid #292525;
+    border-radius: 8px 8px 0 0; /* Zakulatíme jen horní rohy, aby to dole sedělo */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    border-bottom: none;
+}
+
+.image-container figcaption {
+    background-color: #292525;
+    color: #48df28;
+    padding: 10px 20px;
+    margin-top: 0;        /* Smaže mezeru mezi obrázkem a popiskem */
+    border-radius: 0 0 20px 20px; /* Zakulatíme jen spodní rohy pro "batmanovský" efekt */
+    font-size: x-large;
+    display: block;       /* Aby popisek vyplnil šířku pod rámečkem */
+}
+
+.preview {
+    height: auto;
+    max-width: 600px;
 }

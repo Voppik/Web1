@@ -40,3 +40,28 @@
     box-shadow: 0 0 10px #4CAF50; /* Záře */
     font-weight: bold;
 }
+
+.sidebar button#btn-add:hover {
+    background-color: #3c8a3f;
+}
+
+.sidebar button#btn-add {
+    background-color: #4CAF50;
+}
+
+.sidebar button#btn-edit:hover {
+    background-color: #737500;
+}
+
+.sidebar button#btn-edit {
+    background-color: #b5b500;
+}
+
+h3 {
+    color: #5ecd3d;
+    text-align: center;
+    background: #3c3c3c;
+    border: #333333;
+    padding: 10px;
+    border-radius: 20px;
+}

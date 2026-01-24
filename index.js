@@ -12,10 +12,10 @@ function pridatOdkaz(idTlacitka, cilovaAdresa) {
 
 // Definice odkazů - pokud některé tlačítko na stránce chybí, tento kód to ignoruje a jede dál
 pridatOdkaz("btn-uvod", "index.html");
-pridatOdkaz("btn-tvorba", "tvorba.html");
 pridatOdkaz("btn-ukoly", "ukoly.html");
 pridatOdkaz("btn-tabulka", "tabulka.html");
 pridatOdkaz("btn-projekty", "projekty.html");
+pridatOdkaz("btn-galerie", "galerie.html");
 
 
 // --- 2. ČÁST: Zvýraznění aktivního tlačítka ---
@@ -37,10 +37,16 @@ function highlightActiveButton() {
         else if (currentPath.includes("tvorba") && button.id === "btn-tvorba") {
             button.classList.add("active");
         }
-        else if (currentPath.includes("auto1") && button.id === "btn-car") {
+        else if (currentPath.includes("ukoly") && button.id === "btn-ukoly") {
             button.classList.add("active");
         }
         else if (currentPath.includes("tabulka") && button.id === "btn-tabulka") {
+            button.classList.add("active");
+        }
+        else if (currentPath.includes("projekty") && button.id === "btn-projekty") {
+            button.classList.add("active");
+        }
+        else if (currentPath.includes("galerie") && button.id === "btn-galerie") {
             button.classList.add("active");
         }
     });
