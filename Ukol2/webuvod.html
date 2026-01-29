@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statická vlna přes celou plochu</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            background-color: #1a1a1b;
+            overflow: hidden; /* Zabrání skrolování */
+        }
+
+        .wavy-stripes {
+            height: 100%;
+            width: 100%;
+            /* SVG se nyní neroztahuje dlaždicově, ale pokryje celou plochu */
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0 20 Q 25 10 50 20 T 100 20 L 100 100 L 0 100 Z" fill="%233b68a8"/><path d="M0 40 Q 25 30 50 40 T 100 40 L 100 100 L 0 100 Z" fill="%23ffffff"/><path d="M0 60 Q 25 50 50 60 T 100 60 L 100 100 L 0 100 Z" fill="%2395ccb1"/><path d="M0 80 Q 25 70 50 80 T 100 80 L 100 100 L 0 100 Z" fill="%231a1a1b"/></svg>');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+
+<div class="wavy-stripes"></div>
+
+</body>
+</html>

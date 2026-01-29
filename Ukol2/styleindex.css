@@ -1,0 +1,69 @@
+div {
+
+    background-color: lightblue;
+    color: darkslategray;
+    border-style: solid;
+    border-color: darksalmon;
+    text-decoration-color: darksalmon;
+    text-align: inherit;
+}
+
+p {
+    background-color: lightgrey;
+    margin: 10px 10px 10px 10px;
+    padding: 15px 15px 15px 15px;
+    text-align: center;
+    word-spacing: 4px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: yellowgreen;
+    border-radius: 5px;
+    font-size: x-large;
+}
+
+body {
+    background-color: lightgreen;
+}
+
+img {
+    display: block;
+    border: 35px dotted darkorange;
+    width: 90%;
+    height: auto;
+}
+
+.svetlesede_podbarveni {background-color: lightgray}
+
+.tmavesede_podbarveni {background-color: darkgray}
+
+#cerne_podbarveni {background-color: black}
+
+#darkcyan_podbarveni {background-color: darkcyan}
+
+#lightseagreen_podbarveni {background-color: lightseagreen}
+
+h1, h2 {
+    text-align: center;
+    background-color: azure;
+    word-spacing: 10px;
+    margin: 15px;
+    color: darkslateblue;
+}
+
+h3 {
+    text-align: center;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+header {
+    text-align: center;
+    background-color: aquamarine;
+    border-style: solid;
+    border-width: 6px;
+    border-color: darkslategray;
+}
+
+tt {
+    font-size: x-large;
+}

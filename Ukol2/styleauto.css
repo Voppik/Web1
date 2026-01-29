@@ -1,0 +1,51 @@
+p {
+    background-color: lightgrey;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    word-spacing: 4px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: yellowgreen;
+    border-radius: 5px;
+    font-size: x-large;
+
+}
+
+img {
+    width: 80%;
+    height: auto;
+    display: block;
+    border: 18px solid darkslateblue ;
+}
+
+body {
+    background-color: lightblue;
+}
+
+th, center {
+    color: black;
+    font-size: xxx-large;
+}
+
+center {
+    font-size: xxx-large;
+    background-color: darkcyan;
+    column-count: 2;
+    column-gap: 7px;
+    color: white;
+    border: 32px dotted darkturquoise;
+    margin: 20px 20px 20px 20px;
+    padding: 30px 30px 30px 30px;
+}
+
+div {
+    background: lightsteelblue;
+    color: darkslategray;
+    text-align: left;
+    padding: 15px 5px 5px;
+    margin: 10px 10px 10px;
+    font-size: xx-large;
+    word-spacing: 7px;
+    border-style: solid;
+}
