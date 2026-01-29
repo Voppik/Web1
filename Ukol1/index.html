@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox vs CSS Grid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Moderní rozvržení webu</h1>
+    <p>Flexibilní box model a Mřížkové rozvržení</p>
+</header>
+
+    <section id="uvod">
+        <h2>Úvod</h2>
+        <p>Flexbox a CSS Grid jsou základní pilíře moderního webdesignu. Umožňují vytvářet responzivní weby, které se automaticky přizpůsobí velikosti obrazovky bez nutnosti složitých výpočtů.</p>
+    </section>
+
+<main class="container">
+
+    <section id="flexbox">
+        <h2>Flexbox (1D rozvržení)</h2>
+        <p>Navržen pro uspořádání prvků v jednom směru – buď jako řádek, nebo sloupec.</p>
+        <div class="code-box">
+            <code>
+                .container { display: flex; justify-content: center; }
+            </code>
+        </div>
+        <p><strong>Využití:</strong> Navigační menu, centrování ikon, řazení karet produktů.</p>
+    </section>
+
+    <section id="grid">
+        <h2>CSS Grid (2D rozvržení)</h2>
+        <p>Systém mřížky, který pracuje ve dvou rozměrech zároveň (sloupce i řádky).</p>
+        <div class="code-box">
+            <code>
+                .grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
+            </code>
+        </div>
+        <p><strong>Využití:</strong> Celková struktura stránky, komplexní galerie, magazínové layouty.</p>
+    </section>
+
+    <section id="srovnani">
+        <h2>Srovnání</h2>
+        <table>
+            <tr>
+                <th>Layout</th>
+                <th>Dimenze</th>
+                <th>Hlavní zaměření</th>
+            </tr>
+            <tr>
+                <td>Flexbox</td>
+                <td>1D (řada nebo sloupec)</td>
+                <td>Obsah prvků</td>
+            </tr>
+            <tr>
+                <td>Grid</td>
+                <td>2D (řady i sloupce)</td>
+                <td>Celková struktura</td>
+            </tr>
+        </table>
+        <table>
+            <img src="https://blog.nashtechglobal.com/wp-content/uploads/2023/09/download-1-3-1024x538.png">
+        </table>
+    </section>
+</main>
+
+    <section id="zaver">
+        <h2>Závěr</h2>
+        <p>Obě techniky se skvěle doplňují. Často se používá Grid pro hlavní kostru webu a Flexbox pro detaily uvnitř prvků.</p>
+    </section>
+
+</body>
+</html>
